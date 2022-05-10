@@ -1,10 +1,10 @@
 package com.vic.microconsumer.services;
 
-import com.vic.microconsumer.model.Band;
+import com.vic.microconsumer.model.Grupo;
 
 import java.util.List;
 
 
 public interface KafkaListenerBands {
-	List<Band> getBandas();
+	List<Grupo> getGrupos();
 }

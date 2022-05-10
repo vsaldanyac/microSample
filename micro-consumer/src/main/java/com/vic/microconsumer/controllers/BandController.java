@@ -17,6 +17,6 @@ public class BandController {
 
 	@GetMapping("v1/bands")
 	public ResponseEntity<?> getBands() {
-		return new ResponseEntity<>(kafkaListener.getBandas(), HttpStatus.OK);
+		return new ResponseEntity<>(kafkaListener.getGrupos(), HttpStatus.OK);
 	}
 }

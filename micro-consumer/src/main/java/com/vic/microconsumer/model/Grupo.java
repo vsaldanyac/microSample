@@ -1,20 +1,20 @@
 package com.vic.microconsumer.model;
 
-public class Band {
+public class Grupo {
 
 	private String id;
 	private String nombre;
 	private String estilo;
 	private String pais;
 
-	public Band(String _id, String _nombre, String _estilo, String _pais) {
+	public Grupo(String _id, String _nombre, String _estilo, String _pais) {
 		this.pais = _pais;
 		this.id = _id;
 		this.estilo = _estilo;
 		this.nombre = _nombre;
 	}
 
-	public Band() {
+	public Grupo() {
 
 	}
 
