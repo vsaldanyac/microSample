@@ -8,7 +8,7 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.basetis</groupId>
+    <groupId>com.vic</groupId>
     <artifactId>micro-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>micro-consumer</name>
@@ -43,6 +43,7 @@
         </dependency>
     </dependencies>
     <build>
+        <finalName>micro-consumer</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

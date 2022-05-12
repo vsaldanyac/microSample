@@ -8,11 +8,11 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.basetis</groupId>
-    <artifactId>teslesto</artifactId>
+    <groupId>com.vic</groupId>
+    <artifactId>micro-producer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>teslesto</name>
-    <description>Demo project for Spring Boot</description>
+    <name>micro-producer</name>
+    <description>Demo project for produce Kafka messages</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -49,6 +49,7 @@
     </dependencies>
 
     <build>
+        <finalName>micro-producer</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
