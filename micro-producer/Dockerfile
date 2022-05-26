@@ -4,7 +4,7 @@ MAINTAINER VSaldanya <vsaldanya@gmail.com>
 WORKDIR /app
 
 COPY ./target/micro-producer.jar .
-COPY src/main/resources/application*.properties ./
+COPY ./src/main/resources/application*.properties ./
 
 EXPOSE 8080
 

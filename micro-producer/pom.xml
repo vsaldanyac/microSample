@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.vic</groupId>
-    <artifactId>micro-consumer</artifactId>
+    <artifactId>micro-producer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>micro-consumer</name>
+    <name>micro-producer</name>
     <packaging>jar</packaging>
-    <description>Project to consume Kafka messages</description>
+    <description>Project for produce Kafka messages</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -26,6 +26,11 @@
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-core</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -44,7 +49,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>micro-consumer</finalName>
+        <finalName>micro-producer</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -2,7 +2,6 @@ package com.vic.microproducer.controllers;
 
 import com.vic.microproducer.model.Band;
 import com.vic.microproducer.services.KafkaSender;
-import org.apache.juli.logging.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.*;
-import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -93,7 +91,7 @@ public class TestController {
 			forEach
 		 */
 		sb.append("\n");
-		bandas.stream().forEach(band ->	band.setNombre(band.getNombre() + "."));
+		bandas.forEach(band ->	band.setNombre(band.getNombre() + "."));
 		sb.append("Foreach: (punto después del nombre) ");
 		sb.append(bandas.get(0).getNombre());
 
@@ -105,7 +103,7 @@ public class TestController {
 		List<String> lista = bandas.stream().map(Band::getPais).collect(Collectors.toList());
 
 		sb.append("Map: ");
-		sb.append(lista.size() + " - " + lista.get(0));
+		sb.append(lista.size()).append(" - ").append(lista.get(0));
 
 
 		/*
@@ -120,7 +118,7 @@ public class TestController {
 		List<Band> bnds = bandas.stream().peek(band -> band.setId("id. " + band.getId())).peek(band -> band.setPais("P." + band.getPais())).collect(Collectors.toList());
 
 		sb.append("Peek: ");
-		sb.append(bnds.size() + " - " + bnds.get(0).getPais());
+		sb.append(bnds.size()).append(" - ").append(bnds.get(0).getPais());
 
 
 		/*
